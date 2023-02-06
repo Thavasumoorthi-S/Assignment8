@@ -50,30 +50,23 @@ class StudentTest
         Logger logger=Logger.getLogger("com.api.jar");
         while(true)
         {
-            logger.info("\n1)get value from user \n2)before sort display  \n3)sorting\n4) after sorting display \n5)exit");
+            logger.info("\n1)get value from user  \n2)sorting\n3)  display \n4)exit");
             logger.info("Choose any one of the option in the above: ");
             choice=sc.nextInt();
-            if(choice==1)
-            {
+            if(choice==1) {
                 logger.info("Enter the name:");
-                name=sc.next();
+                name = sc.next();
                 logger.info("Enter the age: ");
-                age=sc.nextInt();
+                age = sc.nextInt();
                 logger.info("Enter the gpa: ");
-                gpa=sc.nextDouble();
-                StudentData st=new StudentData();
+                gpa = sc.nextDouble();
+                StudentData st = new StudentData();
                 st.setname(name);
                 st.setage(age);
                 st.setgpa(gpa);
                 list.add(st);
             }
             else if(choice==2)
-            {
-                for (StudentData studentData : list) {
-                    logger.info(studentData.getname() + " " + studentData.getage() + " " + studentData.getgpa());
-                }
-            }
-            else if(choice==3)
             {
                 Collections.sort(list, new Comparator<StudentData>() {
                     @Override
@@ -82,13 +75,13 @@ class StudentTest
                     }
                 });
             }
-            else if(choice==4)
+            else if(choice==3)
             {
                 for (StudentData studentData : list) {
                     logger.info(studentData.getname() + " " + studentData.getage() + " " + studentData.getgpa());
                 }
             }
-            else if(choice==5)
+            else if(choice==4)
             {
                 break;
             }
