@@ -50,7 +50,7 @@ class StudentTest
         Logger logger=Logger.getLogger("com.api.jar");
         while(true)
         {
-            logger.info("\n1)get value from user \n2)before sort display  \n3)sorting\n4) aftewr sorting display \n5)exit");
+            logger.info("\n1)get value from user \n2)before sort display  \n3)sorting\n4) after sorting display \n5)exit");
             logger.info("Choose any one of the option in the above: ");
             choice=sc.nextInt();
             if(choice==1)
