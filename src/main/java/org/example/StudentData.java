@@ -71,7 +71,7 @@ class StudentTest
                 Collections.sort(list, new Comparator<StudentData>() {
                     @Override
                     public int compare(StudentData o1, StudentData o2) {
-                        return (int)(o2.getgpa()-o1.getgpa());
+                        return Double.compare(o2.getgpa(),o1.getgpa());
                     }
                 });
             }
