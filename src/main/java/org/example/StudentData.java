@@ -50,15 +50,15 @@ class StudentTest
         Logger logger=Logger.getLogger("com.api.jar");
         while(true)
         {
-            logger.info("\n1)get value from user  \n2)sorting\n3)  display \n4)exit");
+            logger.info("\n1)GET NAME,AGE,GPA FROM STUDENT \n2)SORT OPERATION ON GPA\n3) DISPLAY STUDENT DETAILS \n4)EXIT");
             logger.info("Choose any one of the option in the above: ");
             choice=sc.nextInt();
             if(choice==1) {
-                logger.info("Enter the name:");
+                logger.info("ENTER THE NAME:");
                 name = sc.next();
-                logger.info("Enter the age: ");
+                logger.info("ENTER THE AGE: ");
                 age = sc.nextInt();
-                logger.info("Enter the gpa: ");
+                logger.info("ENTER THE GPA 1 TO 10: ");
                 gpa = sc.nextDouble();
                 StudentData st = new StudentData();
                 st.setname(name);
